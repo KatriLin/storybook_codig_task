@@ -13,7 +13,7 @@ export default {
 }
 
 export const Primary = {
-  name: 'Primary - on iPhone 6',
+  name: 'Primary ',
   args: {
     items: timelineEvents
   }

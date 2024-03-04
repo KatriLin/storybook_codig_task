@@ -21,11 +21,11 @@ export const Timeline = ({ items }) => {
         {items.map((item, index) => (
           <StyledTableRow key={index} iseven={index % 2 === 0}>
             <StyledTd>{formatDate(item.date)}</StyledTd>
-            <StyledTd>{item.type}</StyledTd>
-            <StyledTd>{item.description}</StyledTd>
+            <StyledTd>{item?.type}</StyledTd>
+            <StyledTd>{item?.description}</StyledTd>
             <PriorityWrapper>
-              <PriorityColor priority={item.priority}></PriorityColor>
-              <Priority priority={item.priority}>{item.priority}</Priority>
+              <PriorityColor priority={item?.priority}></PriorityColor>
+              <Priority priority={item?.priority}>{item?.priority}</Priority>
             </PriorityWrapper>
           </StyledTableRow>
         ))}
