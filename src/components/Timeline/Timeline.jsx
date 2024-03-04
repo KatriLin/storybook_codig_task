@@ -20,7 +20,7 @@ export const Timeline = ({ items }) => {
       <tbody>
         {items.map((item, index) => (
           <StyledTableRow key={index} iseven={index % 2 === 0}>
-            <StyledTd>{formatDate(item.date)}</StyledTd>
+            <StyledTd>{formatDate(item?.date)}</StyledTd>
             <StyledTd>{item?.type}</StyledTd>
             <StyledTd>{item?.description}</StyledTd>
             <PriorityWrapper>
